@@ -170,6 +170,8 @@ public class MainActivity extends AppCompatActivity {
             } else {
                 contactImage.setImageDrawable(ResourcesCompat.getDrawable(getResources(), android.R.drawable.ic_menu_gallery, null));
             }
+            if(firstContactNumber == null)
+                firstContactNumber = "Number not found";
             String format = contactName + " | " + firstContactNumber;
             pickContactButton.setText(format);
         }
